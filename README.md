@@ -1,18 +1,18 @@
-# Ranger
+# Slammer
 
 > *"Now that all the ghosts of Evershade Valley are under my control..."*
 > ~ **King Boo**, Luigi's Mansion: Dark Moon
 
-**Ranger** is the standalone web dashboard for the Evershade ecosystem. It provides a React-based frontend for managing agents, runs, pipelines, and analytics across all services.
+**Slammer** is the standalone web dashboard for the Evershade ecosystem. It provides a React-based frontend for managing agents, runs, pipelines, and analytics across all services.
 
-**Luigi's Mansion origin:** *Ranger* ~ a guardian who patrols and oversees, fitting for a dashboard that monitors the entire ecosystem.
+**Luigi's Mansion origin:** *Slammer* ~ blue ghosts from Luigi's Mansion: Dark Moon that slam the ground with force, perfect for a dashboard that slams you with the big picture.
 
 ## Features
 
 - **Unified Dashboard** ~ Single view of all Evershade services
 - **Agent Management** ~ Create, configure, and monitor AI agents
 - **Pipeline Builder** ~ Visual pipeline editor for cross-service workflows
-- **Analytics** ~ Charts and metrics from Creeper
+- **Analytics** ~ Charts and metrics from Sneaker
 
 ## Tech Stack
 
