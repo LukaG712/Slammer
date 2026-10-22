@@ -188,7 +188,7 @@ function WorkflowBuilder() {
     setTriggers([...triggers, newTrigger])
   }
 
-  const updateTrigger = (index: number, field: string, value: string | boolean) => {
+  const updateTrigger = (index: number, field: string, value: string | boolean | string[]) => {
     const updated = [...triggers]
     updated[index] = { ...updated[index], [field]: value }
     setTriggers(updated)
