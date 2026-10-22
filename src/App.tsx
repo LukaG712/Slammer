@@ -4,6 +4,7 @@ import Workstations from './components/Workstations'
 import MetricsDashboard from './components/MetricsDashboard'
 import LogsView from './components/LogsView'
 import Plugins from './components/Plugins'
+import Missions from './components/Missions'
 
 // Service URLs from environment or relative (for Docker/proxy deployments)
 const getServiceUrl = (name: string, port: number): string => {
@@ -48,7 +49,7 @@ type Run = {
   startedAt: string
 }
 
-type Page = 'services' | 'agents' | 'runs' | 'workflows' | 'workstations' | 'metrics' | 'logs' | 'plugins'
+type Page = 'services' | 'agents' | 'runs' | 'workflows' | 'workstations' | 'metrics' | 'logs' | 'plugins' | 'missions'
 
 function App() {
   const [page, setPage] = useState<Page>('services')
@@ -138,7 +139,7 @@ function App() {
           </p>
         </div>
         <nav className="max-w-7xl mx-auto px-4 flex flex-wrap gap-2">
-          {(['services', 'agents', 'runs', 'workflows', 'workstations', 'metrics', 'logs', 'plugins'] as Page[]).map(p => (
+          {(['services', 'agents', 'runs', 'workflows', 'workstations', 'metrics', 'logs', 'plugins', 'missions'] as Page[]).map(p => (
             <button
               key={p}
               onClick={() => { setPage(p); if (p === 'agents') fetchAgents(); if (p === 'runs') fetchRuns() }}
@@ -252,6 +253,9 @@ function App() {
 
         {/* Plugins Page */}
         {page === 'plugins' && <Plugins />}
+
+        {/* Missions Page */}
+        {page === 'missions' && <Missions />}
       </main>
     </div>
   )
